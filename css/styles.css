@@ -1,9 +1,9 @@
 body {
-    font-family: "Open-Sans", "sans-serif";
+    font-family: "Open-Sans", sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", "curisive";
+    font-family: "Lobster", cursive;
 }
 
 h2{
@@ -15,13 +15,13 @@ header h2 {
 }
 
 footer {
-    background-image: linear-gradient(to bottom, blue, skyblue, white);
+    background-image: linear-gradient(to bottom, #6f156c, #470b91);
     padding: 2rem 0;
 }
 
 .jumbotron {
     padding: 3rem;
-    background-image: linear-gradient(to left, blue, rgb(0, 132, 255)); 
+    background-image: linear-gradient(to left,#6f156c, rgb(0, 132, 255)); 
     color: white;
 }
 
