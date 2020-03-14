@@ -84,10 +84,16 @@
                 <h2 class="text-sm-right">Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is
-                    a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is
+                            a favorite for fly fishers.</p>
+                     </div>
+                    <img class="d-flex img-thumbnail ml-3" src="img/react-lake-thumb.jpg" alt="React Lake Campground" />
+                </div>
             </div>
+           
         </div>
     </div>
 
@@ -105,7 +111,36 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
+        <!--Workshop Assignment-->   
+        <!-- Task 2 -->
+        <div class="row-content">
+            <div class="col col-sm-6 mx-auto"> 
+                <h3 class="card-header info text-white">Reserve a Campsite</h3>
+                    <div class="car-body">
+                        <form action="" >
+                            <div class="form-group row">
+                                <label class="col-form-label" for="NumberOfCampers">Number Of Campers</label>
+                                <div class="col col-sm-6">
+                                    <select class="form-control col" name="reserve" id="">
+                                        <option selected>Select...</option>
+                                        <option value="">Online experience</option>
+                                        <option value="">Onsite experience</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="date">Date</label>
+                                <div class="col col-sm-6 ">
+                                    <input class="form-control" type="date">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+             
     </div>
 
     <footer class="site-footer">
