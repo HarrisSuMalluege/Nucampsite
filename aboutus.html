@@ -5,14 +5,14 @@
         <!-- Required meta tags always come first -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/styles.css" />
-    
+
         <title>NuCamp: A Better Way To Camp</title>
     </head>
 
@@ -35,27 +35,32 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid" width="30"
-                    height="30" /></a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        height="30" /></a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-itme"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                        <li class="nav-itme active"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About</a></li>
+                        <li class="nav-itme"><a class="nav-link" href="index.html"><i
+                                    class="fa fa-home fa-lg"></i>Home</a></li>
+                        <li class="nav-itme active"><a class="nav-link" href="aboutus.html"><i
+                                    class="fa fa-info fa-lg"></i>About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><i
+                                    class="fa fa-address-card fa-lg"></i>Contact</a></li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
+                    <form class="form-inline my-2 my-lg-0" id="siteSerach">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success bg-success text-white my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-success bg-success text-white my-2 my-sm-0"
+                            type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
 
-        
+
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -104,7 +109,8 @@
                 <div class="col">
                     <div class="card bg-light mt-3">
                         <blockquote class="blockquote card-body">
-                            <p class="mb-0">I will not follow where the path my lead, but I will go where there is no path, and I will leave a trail.</p>
+                            <p class="mb-0">I will not follow where the path my lead, but I will go where there is no
+                                path, and I will leave a trail.</p>
                             <footer class="blockquote-footer">Muriel Strode,
                                 <cite title="Source Title">"Wind-Wafted Wild Flowers" -
                                     The Open Court, 1903
@@ -118,17 +124,122 @@
             <div class="row">
                 <div class="col">
                     <h3>Community Partners</h3>
-                    <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
-                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
-                    <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
-                    <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
-                    <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
-                    <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
-                    <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
-                    <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you
-                        covered.</p>
-                </div>
-            </div>
+                    <!--Exercise Tabs-->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link active" href="#bootstrap" role="tab"
+                                data-toggle="tab">Bootstrap Outfitters</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#git" role="tab" data-toggle="tab">Git Out
+                                Expeditions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mongo" role="tab" data-toggle="tab">Mongo Fly
+                                Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#node" role="tab" data-toggle="tab">Node Outdoor
+                                Apparel</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade show active" id="bootstrap">
+                            <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
+                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at
+                                prices you
+                                can't beat.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade show active" id="git">
+                            <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
+                            <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group
+                                of other
+                                adventurers!</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade show active" id="mongo">
+                            <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
+                            <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds?
+                                Stop by
+                                Mongo Fly Shop.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade show active" id="node">
+                            <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
+                            <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a
+                                visit to
+                                Node will be sure to get you
+                                covered.</p>
+                        </div>
+                    </div>
+                    <!-- Exercise Accordion-->
+                   <div class="row">
+                       <div class="col">
+                           <h3>Accordion Exercise</h3>
+                            <div id="accordion">
+                                <div class="card">
+                                    <!-- Accordion 1 -->
+                                    <div role="tab" class="card-header">
+                                        <h4 class="mb-0"> 
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#bootOutfitters" aria-expanded="true"
+                                                aria-controls="collapseThree">
+                                                Bootstrap Outfitters <small>Outdoor GEAR Specialists</small>
+                                            </button>
+                                        </h4>
+                                        <div class="collapse show" id="bootOutfitters" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you
+                                                    need at prices you can't beat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <!-- Accordion 2 -->
+                                    <div role="tab" class="card-header">
+                                        <h4 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#gitOE" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Git out Expeditions <small>Git out Expeditions</small>
+                                            </button>
+                                        </h4>
+                                        <div class="collapse show" id="gitOE" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons
+                                                    with a group of other adventurers!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <!-- Accordion 3 -->
+                                    <div role="tab" class="card-header">
+                                        <h4>
+                                            <a role="button" data-toggle="collapse" data-target="#mongoF">
+                                                Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small>
+                                            </a>
+                                        </h4>
+                                        <div class="collapse show" id="mongoF" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of
+                                                    all kinds? Stop by Mongo Fly Shop.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <!-- Accordion 4 -->
+                                    <div role="tab" class="card-header">
+                                        <h4>
+                                            <a data-toggle="collapse" data-target="#node">
+                                                Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small>
+                                            </a>
+                                        </h4>
+                                        <div class="collapse show" id="node" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to
+                                                    waders, a visit to Node will be sure to get you covered.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                       </div>
+                   </div>
+                   <!--End Accordion-->
+                   <!--Example for Accordion-->
+                
             <!--Table-->
             <div class="row row-content">
                 <div class="col-sm-9">
@@ -167,10 +278,7 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-
-        
 
         <footer class="site-footer">
             <div class="container">
@@ -196,7 +304,8 @@
                                 class="fa fa-youtube fa-lg"></i></a>
                     </div>
                     <div class="col col-sm-4 text-center">
-                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone fa-lg text-primary"></i>Tel:
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i
+                                class="fa fa-phone fa-lg text-primary"></i>Tel:
                             1-206-555-1234<br /></a>
                         <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
                                 class="fa fa-envelope-o fa-lg text-primary"></i>Email: campsites@nucamp.co</a>
@@ -204,12 +313,10 @@
                 </div>
             </div>
         </footer>
-<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
 
 </html>
-
-
