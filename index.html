@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <!-- Required meta tags always come first -->
+ <!-- Required meta tags always come first -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Bootstrap CSS -->
+ <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
+ <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/styles.css" />
-
         <title>NuCamp: A Better Way To Camp</title>
     </head>
-
     <body>
-
         <header class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
@@ -35,7 +31,7 @@
                 </div>
             </div>
         </header>
-        <!-- Navigation Bar -->
+ <!-- Navigation Bar -->
         <nav class="navbar navbar-dark navbar-expand-sm sticky-top"> <!--Ln 39 – Incorrect class. -->
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid" width="30"
@@ -58,10 +54,9 @@
                     </ul>
                     <!--Adding a Modal-->
                     <span class="navbar-text ml-auto">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <i class="fa fa-sign-in"></i> Login</a>
-                </span>
-                   
+                        <a data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in inline-block"></i> Login</a>
+                    </span>
                 </div>
             </div>
         </nav>
@@ -84,6 +79,20 @@
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="loginPassword">Password</label>
                                     <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="form-group col-10">
+                                    <h5>Is this your first time here?</h5>
+                                </div>
+                                <div class="form-check col-2">
+                                    <button type="submit" class="btn btn-primary btn-sm mr-0" id="register">Register</button>
+                                </div>
+                                <div class="col-12">
+                                    <p>For full access to this site,you first need to create an accout.</p>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <a class="btn btn-social-icon-google-plus-official btn-primary" href="http://google.com/"><i class="fa fa-google-plus-official fa-lg"></i>Google</a>
+                                    <a class="btn btn-social-icon-facebook-square btn-primary" href="http://facebook.com/"><i class="fa fa-facebook-square fa-lg"></i>Facebook</a>
+                                    <a class="btn btn-social-icon-windows btn-primary" href="http://microsoft.com/"><i class="fa fa-windows fa-lg"></i>Microsoft</a>
                                 </div>
                                 <div class="col">
                                     <div class="form-check">
@@ -193,7 +202,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <footer class="site-footer">
             <div class="container">
