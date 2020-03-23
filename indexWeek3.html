@@ -44,7 +44,7 @@
                         <div class="container-fluid">
                             <form id="reserveForm">
                                 <div class="row form-group">
-                                    <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                    <label class="col-sm-6 col-form-label">Number of Campers</label>
                                     <div class="col">
                                         <select class="form-control" name="numCampers" id="numCampers">
                                             <option value="1">1</option>
@@ -68,21 +68,20 @@
                                     <label class="col-form-label col-sm-6">Campsite Type</label>
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-success active">
-                                            <input type="radio" name="siteType" id="siteTent" value="tent"
-                                                autocomplete="off" checked> Tent
+                                            <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off"
+                                                checked> tent
                                         </label>
                                         <label class="btn btn-primary">
-                                            <input type="radio" name="siteType" id="siteRV" value="RV"
-                                                autocomplete="off"> RV
+                                            <input type="radio" name="siteType" id="siteRV" value="RV" autocomplete="off"> RV
                                         </label>
                                     </div>
                                 </div>
 
-                                <div class="row form-group">
+                                <div class="row">
                                     <div class="col">
                                         <button type="button" class="btn btn-secondary"
                                             data-dismiss="modal">Cancel</button>
-                                        <button class="btn btn-primary" type="submit">Search</button>
+                                        <button class="btn btn-primary" type="submit" id="reserveForm">Reserve</button>
                                     </div>
                                 </div>
                             </form>
