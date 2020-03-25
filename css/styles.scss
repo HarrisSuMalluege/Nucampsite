@@ -1,0 +1,103 @@
+$color-primary:#CEC8FF;
+$color-secondary:#0066ff;
+$color-pale:#330066 ;
+$color-mid:#000066;
+$color-dark:#0033ff;
+$color-black-transparent: rgb(0, 132, 255);
+
+
+
+body {
+    font-family: "Open-Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+/*---
+h2 {
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: 4px 8px #888888;
+}
+---*/
+header {
+    h2{
+        color: $color-primary;
+    }
+    
+}
+
+.site-footer {
+    padding: 3rem 0;
+}
+footer div {
+    border: 0px;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 3rem;
+    background-image: linear-gradient(to left,$color-secondary,$color-dark,$color-pale, $color-mid); 
+    color: white;
+}
+
+.row-content {
+    padding: 2rem 0;
+    border-bottom: .1rem ridge;
+    min-height: 200px;
+}
+
+
+.navbar {
+    background-color:$color-black-transparent;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 1rem;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+img {
+    opacity: 0.9;
+hover {
+    opacity: 1.0;
+}
+}
+
+
+.img-radius {
+    border-radius: 10%;
+    border: 0;
+    
+}
+.img-radius:hover {
+    box-shadow: 3px 3px $color-secondary;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color:grey;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+#myBtn:hover {
+  
+  opacity: 1;
+}
