@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <title>NuCamp: A Better Way To Camp</title>
+</head>
+<body>
+ <div class="container">
+    <div class="row row-content">
+        <div class="col-md-8 mx-auto">
+            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"> </li>
+                        <li data-target="#homeCarousel" data-slide-to="1"> </li>
+                        <li data-target="#homeCarousel" data-slide-to="2"> </li>
+                    </ol>
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/grand-marais.jpeg" alt="Grand Marais Lake" />
+                        <div class="carousel-caption">
+                            <h4>Grand Marais Campground & Marina </h4>
+                            <p class="d-none d-md-block">The Grand Marais municipal campground is the ideal base
+                                camp for access to Lake Superior and the surrounding region. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Redwing hill.jpeg" alt="Red Wing Downtown Hill" />
+                        <div class="carousel-caption">
+                            <h4>Red Wing Downtown Hill </h4>
+                            <p class="d-none d-md-block">let Nucamp be your guide to this off-the-beaten-path,
+                                hike-in-only campground. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/redwing-downtown.jpeg" alt="Red Wing Downtown" />
+                        <div class="carousel-caption">
+                            <h4>Red Wing Downtown </h4>
+                            <p class="d-none d-md-block">let Nucamp be your guide to this off-the-beaten-path,
+                                hike-in-only campground. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-success btn-sm">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                    <button class="btn btn-success btn-sm">
+                        <i class="fa fa-play"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+        <div class="btn-group" id="carouselButton">
+            <button class="btn btn-success btn-sm">
+                <i class="fa fa-pause"></i>
+            </button>
+            <button class="btn btn-success btn-sm">
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+      </div>  
+    </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+         $(function () {
+                $(".carousel").carousel({ interval: 2000 });
+                $("#carouselPause").click(function () {
+                    $(".carousel").carousel("pause");
+                });
+                $("#carouselPlay").click(function () {
+                    $(".carousel").carousel("cycle");
+                });
+            });
+        
+    </script>
+</body>
+</html>

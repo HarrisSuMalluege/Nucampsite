@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- endbuild -->
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+    #loginModal {
+        width: 30rem;
+        height: 30rem;
+        display: none;
+    }
+    #meun {
+        display: none;
+    }
+    .container {
+        border: 1px solid teal;
+    }
+    span {
+    color: red;
+    cursor: pointer;
+  }
+  div {
+    margin: 3px;
+    width: 80px;
+    display: none;
+    height: 80px;
+    float: left;
+  }
+  #one {
+    background: #f00;
+  }
+  #two {
+    background: #0f0;
+  }
+  #three {
+    background: #00f;
+  }
+</style>
+<body>
+    <div class="container">
+        <div class="row align-self-center">
+            <div class="col mx-auto">
+                <button id="toMeun">Click Me</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul id="meun">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+       
+
+
+    </div>
+    <span>Click here...</span>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+  
+    
+
+<!-- 
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+   endbuild -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script>
+      
+
+        $(document.body).click(function () {
+                $("div:hidden").first().fadeIn("slow");
+            });
+
+    </script>
+    
+    
+    </body>
+</body>
+</html>

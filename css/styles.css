@@ -4,13 +4,6 @@ body {
 h1, h2, h3 {
   font-family: "Lobster", cursive; }
 
-/*---
-h2 {
-  border: 1px solid white;
-  padding: 10px;
-  box-shadow: 4px 8px #888888;
-}
----*/
 header h2 {
   color: #CEC8FF; }
 
@@ -42,13 +35,6 @@ footer div {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.3); }
 
-
-  #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
 img {
   opacity: 0.9; }
   img hover {
@@ -61,20 +47,25 @@ img {
 .img-radius:hover {
   box-shadow: 3px 3px #0066ff; }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  color: grey;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 4px;
-  opacity: 0.5; }
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
 
-#myBtn:hover {
-  opacity: 1; }
+#reserveModal .modal-header {
+  background-color: #17A2B8; }
+  #reserveModal .modal-header h3 {
+    color: #ffffff; }
+
+#loginModal .modal-header {
+  background-color: #842ca7; }
+  #loginModal .modal-header h3 {
+    color: #ffffff; }
+
+/*----------How to use @mixin and include ------------------*/
+#campSite p {
+  opacity: 1;
+  transform: 1;
+  size: 2rem;
+  weight: 200;
+  color: #0066ff; }
