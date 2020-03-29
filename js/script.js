@@ -12,5 +12,12 @@ $(function () {
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
+    //Week 4 Assignment, using jQuery to show the modal when clicked.
+    $("#reserveButton").click(function () {
+        $("#reserveModal").modal("show");
+    });
+    $("#loginButton").click(function () {
+        $("#loginModal").modal("show");
+    });
 });
-//Week 4 Assignment
+

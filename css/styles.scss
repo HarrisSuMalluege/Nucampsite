@@ -1,3 +1,5 @@
+$color-teal:#17A2B8;
+
 $color-primary:#CEC8FF;
 $color-secondary:#0066ff;
 $color-pale:#330066 ;
@@ -9,9 +11,7 @@ $med: 1.5rem;
 $lg:2.0rem;
 $color-black-transparent: rgb(0, 132, 255);
 
-//Week 4 assignment
-$color-teal:#17A2B8;
-$color-whit: #ffffff;
+
 
 body {
     font-family: "Open-Sans", sans-serif;
@@ -73,28 +73,11 @@ img {
     right: 0;
     bottom: 0;
 }
-/*Week 4 Assingment
-#reserveModal {
-    .modal-header {
-        background-color:$color-teal;
-        h3 {
-            color: $color-whit;
-        }
-    }
-}
 
-#loginModal {
-    .modal-header {
-        background-color: $color-mid;
-        h3 {
-            color: $color-whit;
-        }
-    }
-}
-*----------/
+
 /*----------How to use @mixin and include ------------------*/
 
-// using mixing to assign a value to the variable 
+// using mixin to assign a value to the variable 
 @mixin transitProps($val) {
     opacity: $val;
     transform: $val;
@@ -113,4 +96,20 @@ img {
         @include fonts;
     }
     
+}
+
+/*-----------Week 4 Assingment-----------*/
+#reserveModal {
+    .modal-header{
+        background-color: $color-teal;
+        color: white;
+    }
+    
+}
+
+#loginModal{
+    .modal-header{
+        background-color: $color-mid;
+        color:white;
+    }
 }

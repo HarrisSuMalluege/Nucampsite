@@ -52,16 +52,6 @@ img {
   right: 0;
   bottom: 0; }
 
-#reserveModal .modal-header {
-  background-color: #17A2B8; }
-  #reserveModal .modal-header h3 {
-    color: #ffffff; }
-
-#loginModal .modal-header {
-  background-color: #842ca7; }
-  #loginModal .modal-header h3 {
-    color: #ffffff; }
-
 /*----------How to use @mixin and include ------------------*/
 #campSite p {
   opacity: 1;
@@ -69,3 +59,12 @@ img {
   size: 2rem;
   weight: 200;
   color: #0066ff; }
+
+/*-----------Week 4 Assingment-----------*/
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+
+#loginModal .modal-header {
+  background-color: #842ca7;
+  color: white; }
