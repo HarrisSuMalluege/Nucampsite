@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- endbuild -->
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mt-5 align-items-center">
+            <div class="col text-center">
+                <label for="Days">Days:</label>
+                <input type="text" id="daysN" placeholder="Number of days">
+                <button class="btn btn-success" onclick="toGetDays()">Submit</button>
+                <p id="dToHours"></p>
+                <p id="dToMins"></p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        
+        function toGetDays() {
+            var dN = document.getElementById("daysN").value;
+            const daysToHours = (days) => (days * 24);
+            let hTomins = (daysToHours(dN));
+            const hoursToMins = (hours) => hTomins * 60;
+            
+            document.getElementById('dToHours').innerHTML = (`${dN} days is equal to ${daysToHours(dN)} hours.`);
+            document.getElementById('dToMins').innerHTML = (`${hTomins} hours is equal to ${hoursToMins(hTomins)} mintues.`);
+            
+        }
+    
+
+
+
+        // Drill #1: Change the below function declaration to an arrow function
+
+            const ftToInches = (f) => (f * 12);
+
+            // Test - you do not need to change this part.
+            console.log(`5 feet equals: ${ftToInches(5)} inches.`);
+
+
+
+            // Drill #2: Change the below function declaration to an arrow function
+            /*function area(width, length) {
+              return width * length;
+            }*/
+
+            const area = (a, b) => (a * b)
+            // Test - you do not need to change this part.
+            console.log(`The area of a 4x5 rectangle is: ${area(4, 5)}.`);
+
+            // Drill #3: Change the below function expression to an arrow function
+            /*const daysToHours = function(days){
+              return days * 24;
+            }*/
+            const daysToHours = (days) => (days * 24);
+            console.log(`28 days is equal to ${daysToHours(28)} hours.`);
+
+            // Test - you do not need to change this part.
+            //console.log(`28 days is equal to ${daysToHours(28)} hours.`);
+
+            // Drill #4: Change the below function expression to an arrow function
+            /*const cardName = function(value, suit) {
+              return `${value} of ${suit}`;
+            }*/
+            const cardName = (value, suit) => (`${value} of ${suit}`)
+            // Test - you do not need to change this part.
+            console.log(`You turn the card over to reveal a ${cardName(7, "Clubs")}!`);
+    </script>
+</body>
+</html>
